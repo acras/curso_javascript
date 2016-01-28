@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script type='text/javascript'>
+      function cloneDiv(comFilhos){
+        divMae = document.getElementById('divMae')
+        node = document.getElementById('minhaDiv')
+        n2 = node.cloneNode(comFilhos)
+        divMae.appendChild(n2)
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Clone Node</h1>
+    <div id='divMae'>
+      <div id='minhaDiv' style='background-color: red'>
+        Este é um exemplo de clone node.
+        <button>OK</button>
+      </div>
+    </div>
+      <button onclick='cloneDiv(true)'>Clone</button>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<html coding='utf-8'>
+  <head>
+    <script type='text/javascript'>
+      var DivObject = function(div){
+        var instance = new Object()
+        var fDiv = div
+        instance.hide = function(){
+          fDiv.style.display = 'none'
+        }
+        instance.show = function(){
+          fDiv.style.display = ''
+        }
+        return instance
+      }
+
+      var esconder = function(){
+        var d = new DivObject(document.getElementById('minhaDiv'))
+        d.hide()
+      }
+      var mostrar = function(){
+        var d = new DivObject(document.getElementById('minhaDiv'))
+        d.show()
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id='minhaDiv'>
+      Esta é uma div
+    </div>
+    <button onClick="esconder();">Esconder</button>
+    <button onClick="mostrar();">Mostrar</button>
+  </body>
+
+</html>

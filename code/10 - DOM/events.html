@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script type='text/javascript'>
+      function mouseMove(e){
+        e = e || event
+        var target = e.target || e.srcElement
+        var divLog = document.getElementById('divLog')
+        var mousex = event.clientX;
+        var mousey = event.clientY;
+        divLog.innerHTML = 'x: ' + mousex + ', y: ' + mousey
+      }
+    </script>
+  </head>
+  <body onmousemove='mouseMove()'>
+    <h1>Clone Node</h1>
+    <div id='divMae' onmousemove='mouseMove()'>
+      <div id='minhaDiv' style='background-color: red'>
+        Este é um exemplo de clone node.
+        <button>OK</button>
+      </div>
+    </div>
+    <div id='divLog'>
+
+    </div>
+  </body>
+</html>

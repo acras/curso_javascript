@@ -1,0 +1,34 @@
+<html>
+<head>
+  <script type='text/javascript'>
+    var Div = function(d){
+      var domElement = d
+      this.esconder = function(){
+        domElement.style.display = 'none'
+        return this
+      }
+      this.mostrar = function(){
+        domElement.style.display = ''
+        return this
+      }
+    }
+
+    function hidediv(){
+      var divElement = document.getElementById('minhaDiv')
+      d = new Div(divElement)
+      d.esconder()
+    }
+
+    function showdiv(){
+      var divElement = document.getElementById('minhaDiv')
+      d = new Div(divElement)
+      d.mostrar()
+    }
+  </script>
+</head>
+<body>
+  <div id='minhaDiv'>Eu sou a DIV</div>
+  <button onclick='hidediv()'>Esconder</button>
+  <button onclick='showdiv()'>Mostrar</button>
+</body>
+</html>
