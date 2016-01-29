@@ -1,0 +1,13 @@
+1 - Criação de Classes Utilizando prototypes
+
+1.1 - crie uma classe chamada Astronauta cujo construtor receba o nome do astronauta e a data de nascimento
+1.2 - crie uma propriedade na classe que retorne a idade do astronauta em dias
+1.2 - crie uma propriedade na classe que retorne a idade do astronauta legível (em anos aproximados)
+1.3 - crie uma classe chamada Missao cujo construtor receba o nome da missão
+1.4 - a missão deve possuir uma lista de astronautas
+1.5 - a missão deve retornar a idade média dos astronautas
+1.6 - a missão deve imprimir na tela um manifesto com nomes e idades dos astronautas presentes
+1.7 - crie uma classe chamada EstacaoEspacial cujo construtor receba um nome e uma descrição da localização da estação
+1.8 - a estação deve possuir uma lista de astronautas
+1.9 - a estação deve retornar a idade média dos astronautas
+1.10 - a estação deve imprimir na tela um manifesto com nomes e idades dos astronautas presentes
